@@ -1,4 +1,4 @@
-# Poc storage hardhat 
+# Poc storage-with-history_hardhat 
 
 This project is just a POC for deploy on Blockchain EVM compatible and test framework.
 
@@ -42,7 +42,7 @@ npx hardhat test
 npx hardhat run deployments/deployStorageWithHistory.js --network mumbai
 npx hardhat run deployments/deployStorageWithHistory.js --network rinkeby
 ```
-# Verify and publish code on etherscan 
+## Verify and publish code on etherscan 
 ```sh
 npx hardhat verify --network rinkeby 0x$CONTRACT_ADDRESS_DEPLOYED
 ```
