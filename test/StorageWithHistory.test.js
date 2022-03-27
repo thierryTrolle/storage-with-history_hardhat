@@ -21,6 +21,10 @@ describe("StorageWithHistory.sol", () => {
     });
 
     describe("Correct setup", () => {
+        it("Should have correct deployed contract", async () => {
+            let contractCode=await ethers.provider.getCode(contract.address);
+            expect(contractCode).not.equal("0x");
+        });
         it("should be named 'pocStorageWithHistory", async () => {
             const name = await contract.name();
             expect(name).to.equal("pocStorageWithHistory");

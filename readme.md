@@ -22,7 +22,7 @@ npm install
 touch .env 
 ```
 
-* get api_key from [alchemy](https://www.alchemy.com/) of ethereum node.
+* get api_key from [alchemy](https://www.alchemy.com/) for rinkeby and mumbai network.
 
 * configure .env file:
 ```
