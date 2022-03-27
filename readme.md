@@ -10,6 +10,8 @@ Contract deployed on
 
 * Testnet matic mumbai : [see on polygonscan](https://mumbai.polygonscan.com/address/0x2e7fCc6744E574e1C76D1B37CC54872CdC018626#code)
 
+see [example call with node fork hardhat feature](https://github.com/thierryTrolle/poc_storage_callByNodeFork) how to call contract simply with node fork
+
 ## install and configure
 
 * install dependencies
