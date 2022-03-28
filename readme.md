@@ -10,7 +10,7 @@ Contract deployed on
 
 * Testnet matic mumbai : [see on polygonscan](https://mumbai.polygonscan.com/address/0x2e7fCc6744E574e1C76D1B37CC54872CdC018626#code)
 
-see [example call with node fork hardhat feature](https://github.com/thierryTrolle/poc_storage_callByNodeFork) how to call contract simply with node fork
+see [example call with node fork hardhat feature](https://github.com/thierryTrolle/poc_storage_callByNodeFork) how to call contract simply with node fork with another config params.
 
 ## install and configure
 
@@ -39,11 +39,22 @@ ETHERSCAN_KEY = $API_ID
 npx hardhat test
 ```
 
+## Test by node fork mumbai 
+* Run mumbai fork node in localhost 
+```sh
+npx hardhat node --fork https://polygon-mumbai.g.alchemy.com/v2/$API_KEY
+```
+* Run specific test 
+```sh
+npx hardhat test --network localhost testbyfork/storageWithHistoryDeployed.test.js
+```
+
 ## Deploy
 ```sh
 npx hardhat run deployments/deployStorageWithHistory.js --network mumbai
 npx hardhat run deployments/deployStorageWithHistory.js --network rinkeby
 ```
+
 ## Verify and publish code on etherscan 
 ```sh
 npx hardhat verify --network rinkeby 0x$CONTRACT_ADDRESS_DEPLOYED
